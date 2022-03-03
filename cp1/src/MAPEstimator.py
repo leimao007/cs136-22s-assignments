@@ -71,6 +71,7 @@ class MAPEstimator():
         self.total_count = 0
         # TODO update total_count
         # TODO update the count_V array
+        
 
     def predict_proba(self, word):
         ''' Predict probability of a given unigram under this model
@@ -96,6 +97,10 @@ class MAPEstimator():
             raise ValueError(
                 "Hyperparameter alpha does not yield valid MAP estimate")
         # TODO calculate MAP estimate of the provided word
+        
+        
+        
+        
         return 1.0 / self.vocab.size  # TODO change this placeholder!
 
     def score(self, word_list):
